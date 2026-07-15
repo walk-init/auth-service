@@ -61,7 +61,10 @@ export class AuthService {
 			account = await this.authRepository.findUserByEmail(identifier)
 		}
 		if (!account) {
-			throw new RpcException('Account not found')
+			throw new RpcException({
+				code: 5,
+				details: 'Account not found'
+			})
 		}
 		if (type === 'phone' && !account.isPhoneVerified) {
 			await this.authRepository.updateAccount(account.id, {

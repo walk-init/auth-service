@@ -2667,13 +2667,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@walkcat/contracts@npm:^0.0.2":
-  version: 0.0.2
-  resolution: "@walkcat/contracts@npm:0.0.2"
+"@walkcat/contracts@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "@walkcat/contracts@npm:0.0.3"
   dependencies:
     "@nestjs/microservices": "npm:^11.1.24"
     rxjs: "npm:^7.8.2"
-  checksum: 10c0/153cc1432daedd18e15f42209b082a6c3b4d63c5d4ee9633dc44a36a2b2f933700d6c81d02c50e45af163f6fc7aacf6176ecff49be3014cd24dd72f463f3dd5f
+  checksum: 10c0/67dc9490478a8a8b53a1233c4702cd49789bc703c594e8b42956a18086eb48cdb8526e522d0e5838d0294a673d4ed1ebced09c0ed5829282c7d203b6dece01a2
   languageName: node
   linkType: hard
 
@@ -3134,7 +3134,7 @@ __metadata:
     "@types/jest": "npm:^30.0.0"
     "@types/node": "npm:^22.10.7"
     "@types/supertest": "npm:^6.0.2"
-    "@walkcat/contracts": "npm:^0.0.2"
+    "@walkcat/contracts": "npm:^0.0.3"
     "@walkcat/core": "npm:^1.0.3"
     eslint: "npm:^9.18.0"
     eslint-config-prettier: "npm:^10.0.1"

@@ -2681,13 +2681,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@walkcat/contracts@npm:^0.0.3":
-  version: 0.0.3
-  resolution: "@walkcat/contracts@npm:0.0.3"
+"@walkcat/contracts@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@walkcat/contracts@npm:1.0.0"
   dependencies:
     "@nestjs/microservices": "npm:^11.1.24"
     rxjs: "npm:^7.8.2"
-  checksum: 10c0/67dc9490478a8a8b53a1233c4702cd49789bc703c594e8b42956a18086eb48cdb8526e522d0e5838d0294a673d4ed1ebced09c0ed5829282c7d203b6dece01a2
+  checksum: 10c0/9517f498b61c841312782b19a38e121a27a44541313cee4e749027f73bfb366f382e05f096b800b4059f1ad324b67706b2ceede2a18eeffb158cdf8ad3d34360
   languageName: node
   linkType: hard
 
@@ -3149,7 +3149,7 @@ __metadata:
     "@types/node": "npm:^22.10.7"
     "@types/supertest": "npm:^6.0.2"
     "@walkcat/common": "npm:^1.0.0"
-    "@walkcat/contracts": "npm:^0.0.3"
+    "@walkcat/contracts": "npm:^1.0.0"
     "@walkcat/core": "npm:^1.0.4"
     class-transformer: "npm:^0.5.1"
     class-validator: "npm:^0.15.1"

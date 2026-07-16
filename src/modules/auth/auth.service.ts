@@ -1,6 +1,7 @@
-import { Injectable, UnauthorizedException } from '@nestjs/common'
+import { Injectable } from '@nestjs/common'
 import { RpcException } from '@nestjs/microservices'
 import { Account } from '@prisma/generated/client'
+import { RpcStatus } from '@walkcat/common/dist/enums'
 import type {
 	SendOTPRequest,
 	SendOTPResponse,
@@ -62,7 +63,7 @@ export class AuthService {
 		}
 		if (!account) {
 			throw new RpcException({
-				code: 5,
+				code: RpcStatus.NOT_FOUND,
 				details: 'Account not found'
 			})
 		}

@@ -2351,6 +2351,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/validator@npm:^13.15.3":
+  version: 13.15.10
+  resolution: "@types/validator@npm:13.15.10"
+  checksum: 10c0/3e2e65fcd37dd6961ca3fd0535293d0c42f5911dc3ca44b96f458835e6db2392b678ccbb0c9815d8c0a14e653439e6c62c7b8758a6cd1d6e390551c9e56618ac
+  languageName: node
+  linkType: hard
+
 "@types/yargs-parser@npm:*":
   version: 21.0.3
   resolution: "@types/yargs-parser@npm:21.0.3"
@@ -2667,6 +2674,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@walkcat/common@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@walkcat/common@npm:1.0.0"
+  checksum: 10c0/16b838a770c591206d8bd2eb53892d768d46a4beb629b7b2d49278d2a65ae518f8b3b58ee488fa4ff6185a293e333b2970b8a9bbc3db211b2d233101cb04e87b
+  languageName: node
+  linkType: hard
+
 "@walkcat/contracts@npm:^0.0.3":
   version: 0.0.3
   resolution: "@walkcat/contracts@npm:0.0.3"
@@ -2677,14 +2691,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@walkcat/core@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "@walkcat/core@npm:1.0.3"
+"@walkcat/core@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@walkcat/core@npm:1.0.4"
   dependencies:
     "@trivago/prettier-plugin-sort-imports": "npm:^5.2.2"
   peerDependencies:
-    prettier: 3.0.0
-  checksum: 10c0/b23db16930daf91b3e244069a38651d2201cf035bddcb22da76b43a3eac991a815c906083e744a0c5a11613dd8640f6462cf04231163d57289f02457f6b0b9fd
+    prettier: ^3.0.0
+  checksum: 10c0/b24059a5cdb1b65fb12144ed0349b67736947ef9f3c4df6787870877161382b28cb954ba22380a5e2bf3bdf6cb27fae3c7b3fd0702c14afbca96721a450e7cfe
   languageName: node
   linkType: hard
 
@@ -3134,15 +3148,18 @@ __metadata:
     "@types/jest": "npm:^30.0.0"
     "@types/node": "npm:^22.10.7"
     "@types/supertest": "npm:^6.0.2"
+    "@walkcat/common": "npm:^1.0.0"
     "@walkcat/contracts": "npm:^0.0.3"
-    "@walkcat/core": "npm:^1.0.3"
+    "@walkcat/core": "npm:^1.0.4"
+    class-transformer: "npm:^0.5.1"
+    class-validator: "npm:^0.15.1"
     eslint: "npm:^9.18.0"
     eslint-config-prettier: "npm:^10.0.1"
     eslint-plugin-prettier: "npm:^5.2.2"
     globals: "npm:^16.0.0"
     ioredis: "npm:^5.11.1"
     jest: "npm:^30.0.0"
-    prettier: "npm:^3.4.2"
+    prettier: "npm:^3.9.5"
     prisma: "npm:^7.8.0"
     reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
@@ -3557,6 +3574,24 @@ __metadata:
   version: 2.2.0
   resolution: "cjs-module-lexer@npm:2.2.0"
   checksum: 10c0/aec4ca58f87145fac221386790ecaae8b012f2e2359a45acb61d8c75ea4fa84f6ea869f17abc1a7e91a808eff0fed581209632f03540de16f72f0a28f5fd35ac
+  languageName: node
+  linkType: hard
+
+"class-transformer@npm:^0.5.1":
+  version: 0.5.1
+  resolution: "class-transformer@npm:0.5.1"
+  checksum: 10c0/19809914e51c6db42c036166839906420bb60367df14e15f49c45c8c1231bf25ae661ebe94736ee29cc688b77101ef851a8acca299375cc52fc141b64acde18a
+  languageName: node
+  linkType: hard
+
+"class-validator@npm:^0.15.1":
+  version: 0.15.1
+  resolution: "class-validator@npm:0.15.1"
+  dependencies:
+    "@types/validator": "npm:^13.15.3"
+    libphonenumber-js: "npm:^1.11.1"
+    validator: "npm:^13.15.22"
+  checksum: 10c0/bc030e0118d79a5fc2d053dfd4c7475092dd159222eafe946c2b01d7ff22a0a8075c8713a96239a3db536ff2a18e18d791c3a6bfabd66dbac077f7d3fd950402
   languageName: node
   linkType: hard
 
@@ -5827,6 +5862,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"libphonenumber-js@npm:^1.11.1":
+  version: 1.13.8
+  resolution: "libphonenumber-js@npm:1.13.8"
+  checksum: 10c0/8115a709393f655c98bff70c4a6e80ad7ff402a3def177bc5042ccdd9849c900f0c766f3254c64897b4c77566108822e493b13fd6943d3b079fad5506245308e
+  languageName: node
+  linkType: hard
+
 "lines-and-columns@npm:^1.1.6":
   version: 1.2.4
   resolution: "lines-and-columns@npm:1.2.4"
@@ -6715,12 +6757,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.4.2":
-  version: 3.8.3
-  resolution: "prettier@npm:3.8.3"
+"prettier@npm:^3.9.5":
+  version: 3.9.5
+  resolution: "prettier@npm:3.9.5"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/754816fd7593eb80f6376d7476d463e832c38a12f32775a82683adb6e35b772b1f484d65f19401507b983a8c8a7cd5a4a9f12006bd56491e8f35503473f77473
+  checksum: 10c0/0349dd9e6d8010965de6f69e6b6ee2484b8caf78c66675afced6c75ad60ff24c3a2a4f41153fb8adeaee4d8f539641b48cebc71d283cec4d146e9962126c5ceb
   languageName: node
   linkType: hard
 
@@ -8014,6 +8056,13 @@ __metadata:
     typescript:
       optional: true
   checksum: 10c0/e6897ed2008fc900380a6ce39b62bc5fca45fd5e070f70571c6380ede3ba026d0b7016230215d87f7f3d672a28dbde5a0522d39830b493fdc3dccd1a59ef4ee6
+  languageName: node
+  linkType: hard
+
+"validator@npm:^13.15.22":
+  version: 13.15.35
+  resolution: "validator@npm:13.15.35"
+  checksum: 10c0/1958ebcad578128d154853a2b9bf5b95e7738dcc7d1d065e50a969812272312ec379dcaf375b9d7545e04a71de6755f60f5a4b49c1405737a9c80e11da297eef
   languageName: node
   linkType: hard
 
